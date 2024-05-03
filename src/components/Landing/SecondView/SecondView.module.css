@@ -1,0 +1,90 @@
+.SecondView {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    
+}
+
+.fondo2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: blur(1rem);
+}
+
+.contenido {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SobreLaApp{
+    height: 40%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.grid {
+    height: 60%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 3vh;
+}
+
+.gridDiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridDiv h4 {
+    
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.fotoIcon {
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.gridDiv p {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+
+

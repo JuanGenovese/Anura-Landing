@@ -1,0 +1,32 @@
+.contenido2 {
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.quienesSomos {
+    color: white;
+    height: 30%;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.carrete {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
