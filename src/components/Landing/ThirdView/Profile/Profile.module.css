@@ -1,11 +1,13 @@
 .perfil {
-    height: 30vh;
+    height: 40vh;
 }
 
 .nombre {
     color: white;
+    font-size: 1.5rem;
 }
 
 .funcion {
     color: white;
+    font-size: 0.8rem;
 }

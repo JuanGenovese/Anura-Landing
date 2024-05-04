@@ -6,10 +6,17 @@ import ThirdView from '../../components/Landing/ThirdView/ThirdView.jsx'
 
 const Landing = () => {
   return (
-    <div className={style.conteiner}>
+    <div className={style.conteiner} id='Anura'>
+      
       <FirstView/>
-      <SecondView/>
-      <ThirdView/>
+
+      <div className={style.SecondBG} id='sobre-app'>
+        <img src="/Landing3.JPG" className={style.fondo2}/>
+
+        <SecondView/>
+        <ThirdView/>
+      </div>
+      
     </div>
   )
 }
