@@ -32,7 +32,7 @@ function App() {
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Landing/>}/>
-        <Route path="/MasInfo" element={<MasInfo/>}/>
+        <Route path="/masinfo" element={<MasInfo/>}/>
       </Routes>
     </div>
   )
