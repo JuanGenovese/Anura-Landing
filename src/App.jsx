@@ -1,6 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Landing from "./views/Landing/Landing";
+
 import NavBar from "./components/NavBar/NavBar";
+import Landing from "./views/Landing/Landing";
+import MasInfo from "./views/MasInfo/MasInfo";
+
 import './App.css'
 import { useEffect, useState } from "react";
 
@@ -29,6 +32,7 @@ function App() {
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Landing/>}/>
+        <Route path="/MasInfo" element={<MasInfo/>}/>
       </Routes>
     </div>
   )

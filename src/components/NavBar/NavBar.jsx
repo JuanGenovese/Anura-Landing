@@ -48,7 +48,7 @@ const NavBar = () => {
        
       <a href="#sobre-app"><span> Sobre la app </span></a>
       <a href="#equipo"><span> Equipo </span></a>
-      <a href="#mas-info"><span> Más info </span></a>
+      <a href="/MasInfo"><span> Más info </span></a>
         
     </div>
   )
