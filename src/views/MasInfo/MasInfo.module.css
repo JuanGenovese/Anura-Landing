@@ -8,19 +8,23 @@
 
 .cont {
     background-color: rgba(0, 0, 0, 0.9);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     color: white;
 }
 
 .SobreAnuros {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    height: 95vh;
-    font-size: 1.6rem;
-    padding-top: 5vh;
+    height: 90vh;
+
+    
+}
+.SobreAnuros h1 {
+    font-size: 3rem;
+
+    margin-bottom: 3vh;
 }
 
 .SobreAnuros p {
@@ -31,6 +35,9 @@
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
+
+    margin-bottom: 4vh;
+    
 }
 
 .DownloadButton {
@@ -49,4 +56,35 @@
     cursor: pointer;
     color: black;
     background-color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+}
+
+.Down {
+    border: none;
+    margin-left: 32vw;
+    height: 11vh;
+    width: 5vw;
+    border-radius: 50%;
+    background: none;
+}
+
+.Back {
+    border: none;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    height: 9vh;
+    width: 4vw;
+    border-radius: 50%;
+    background: none;
+}
+
+.arrow {
+    height: 6vh;
 }
