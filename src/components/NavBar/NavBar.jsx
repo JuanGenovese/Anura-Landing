@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 import style from "./NavBar.module.css"
 
 const NavBar = () => {
@@ -48,7 +49,7 @@ const NavBar = () => {
        
       <a href="#sobre-app"><span> Sobre la app </span></a>
       <a href="#equipo"><span> Equipo </span></a>
-      <a href="/MasInfo"><span> Más info </span></a>
+      <Link to="/masinfo"><span> Más info </span></Link>
         
     </div>
   )
