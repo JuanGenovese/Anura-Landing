@@ -4,6 +4,8 @@ import style from "./NavBar.module.css"
 
 const NavBar = () => {
 
+  console.log(window.scrollY)
+
   const [ prevScrollPos, setPrevScrollPos ] = useState(575)
   const [ visible, setVisible ] = useState(false)
 
@@ -13,7 +15,6 @@ const NavBar = () => {
     const handleScroll = () => { 
       
       if (window.scrollY < 575) setVisible(false)
-
       //posicion actual del desplazamiento (a cuantos pixeles del margen superior meencuentro posicionado)
       const currentScrollPos = window.scrollY
 
@@ -39,7 +40,7 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll)
     }
 
-  }, []) 
+  }, [window.scrollY]) 
 
   return (
 
