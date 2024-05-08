@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import style from "./MasInfo.module.css"
 
 const MasInfo = () => {
+
+  useEffect (() => {
+    window.scrollTo(0,0)
+  },[])
+  
   return (
     <div className={style.cont}>
       <img src="/MasInfoBG1.jpg" className={style.BG}/>
