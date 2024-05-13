@@ -85,10 +85,12 @@
 
     .TitleCont {
         width: 100%;
+        
     }
 
     .logo {
         height: 15vh;
+        margin-top: 10vh;
     }
 
     .Description {
