@@ -30,5 +30,28 @@
     gap: 15px;
 }
 
+@media screen and (max-width: 700px) {
+    .contenido2 {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 15vh;
+    }
+
+    .quienesSomos {
+        width: 95%;;
+        font-size: 0.85rem;
+        margin-bottom: 10vh;
+        
+    }
+
+    .carrete {
+        height: 100%;
+        width: 90%;
+        overflow-x: scroll;
+        margin-bottom: 10vh;
+    }
+}
 
 

@@ -12,7 +12,6 @@ const Landing = () => {
 
       <div className={style.SecondBG} id='sobre-app'>
         <img src="/Landing3.JPG" className={style.fondo2}/>
-
         <SecondView/>
         <ThirdView/>
       </div>

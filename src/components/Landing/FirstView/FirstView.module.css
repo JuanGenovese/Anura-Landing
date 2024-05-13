@@ -75,3 +75,35 @@
 .Link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 700px) {
+
+    .FirstView{
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .TitleCont {
+        width: 100%;
+    }
+
+    .logo {
+        height: 15vh;
+    }
+
+    .Description {
+        width: 95%;
+    }
+
+    .txt {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .DownloadButton {
+        margin-top: 2.5vh;
+        height: 8vh;
+        width: 50vw;
+    }
+
+}

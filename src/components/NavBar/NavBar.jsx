@@ -4,8 +4,6 @@ import style from "./NavBar.module.css"
 
 const NavBar = () => {
 
-  console.log(window.scrollY)
-
   const [ prevScrollPos, setPrevScrollPos ] = useState(575)
   const [ visible, setVisible ] = useState(false)
 
