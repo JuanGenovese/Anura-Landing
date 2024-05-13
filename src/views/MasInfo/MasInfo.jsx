@@ -22,11 +22,6 @@ const MasInfo = () => {
         <br/>Los anuros son un grupo muy diverso, no sólo en número, con más de 7600especies reconocidas en todo el mundo, sino también en hábitos, modos reproductivosy comportamientos.<br/>  
         <br/>Esta aplicación te invita a introducirse en el fascinante mundo de estosanimales y conocer las especies que podemos encontrar en la provincia de Jujuy,bienvenidos!
         </p>
-
-        <div className={style.buttons}>
-          <span className={style.Down}><img className={style.arrow} src="/arrow-down-solid.svg"/></span>
-        </div>
-
       </div>
         
     
