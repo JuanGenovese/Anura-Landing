@@ -1,0 +1,53 @@
+.parte2 {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.divUno {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nombreVulgar {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombreVulgar h2 {
+    color: rgb(255, 157, 19);
+    font-weight: bold;
+}
+
+.nombreVulgar p {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.detalles {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalleItem {
+
+    width: 21%;
+}
+
+.detalleItem h2 {
+    color: rgb(255, 64, 64);
+}
+
+.detalleItem p {
+    margin-left: 1vw;
+    margin-top: 2vh;
+    width: 100%;
+}

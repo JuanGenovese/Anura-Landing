@@ -1,0 +1,21 @@
+.aprenderMasCont {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1
+}
+
+.bg {
+    position: fixed;
+    object-fit: cover;
+    object-position: center;
+    height: 150%;
+    z-index: -99;
+}
+
+.introduccion {
+    padding-top: 25vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}

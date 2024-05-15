@@ -1,0 +1,27 @@
+.parte1 {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fotos p {
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.nombreCientifico p {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.imagen1{
+    border-radius: 2%;
+}

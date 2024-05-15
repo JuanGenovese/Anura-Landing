@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./SecondView.module.css"
+import { Link } from 'react-router-dom'
 
 const SecondView = () => {
   return (
@@ -81,6 +82,19 @@ const SecondView = () => {
             </div>
         
         </div>
+        
+        <div className={style.verMasCont}>
+            <Link to="/aprenderMas" className={style.Link}>
+                <div className={style.hover}>
+                    <p> Aprender más</p>
+                    <img src="/angles-right-solid.svg" className={style.verMasIcon} />
+                </div>
+            </Link>
+            
+            
+            
+        </div>
+        
 
     </div>
   )

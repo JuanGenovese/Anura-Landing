@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Landing from "./views/Landing/Landing";
 import MasInfo from "./views/MasInfo/MasInfo";
+import AprenderMas from "./views/AprenderMas/AprenderMas";
 import Footer from "./components/Footer/Footer"
 
 import React ,{ useEffect, useState } from "react";
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Landing/>}/>
         <Route path="/masinfo" element={<MasInfo/>}/>
+        <Route path="/aprenderMas" element={<AprenderMas/>}/>
       </Routes>
       <Footer/>
     </div>

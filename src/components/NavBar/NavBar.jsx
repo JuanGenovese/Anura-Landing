@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import style from "./NavBar.module.css"
 
 const NavBar = () => {
@@ -7,12 +7,17 @@ const NavBar = () => {
   const [ prevScrollPos, setPrevScrollPos ] = useState(575)
   const [ visible, setVisible ] = useState(false)
 
+  const location = useLocation()
+  console.log(location.pathname)
   useEffect(() => {
 
     //handleScroll se encarga de modificar los estados locales de acuerdo a los cambios que ocurran en el desplazamiento en la ventana del navegador 
     const handleScroll = () => { 
-      
-      if (window.scrollY < 575) setVisible(false)
+      if(location.pathname === "/aprenderMas") {
+        setVisible(true)
+      } else if (window.scrollY < 575) {
+        setVisible(false)
+      } else {
       //posicion actual del desplazamiento (a cuantos pixeles del margen superior meencuentro posicionado)
       const currentScrollPos = window.scrollY
 
@@ -24,7 +29,7 @@ const NavBar = () => {
 
       setVisible(scrollDown)
       setPrevScrollPos(currentScrollPos)
-      
+      }
     }
 
     //"window" es un objeto global de JS que me permite acceder a varias propiedades de la ventana del navegador
