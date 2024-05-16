@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import style from "./MasInfo.module.css"
+import MasInfoNav from '../../components/MasInfoNav/MasInfoNav'
 
 const MasInfo = () => {
 
@@ -12,9 +13,7 @@ const MasInfo = () => {
     <div className={style.cont}>
       <img src="/MasInfoBG1.jpg" className={style.BG}/>
 
-      <Link to="/">
-        <img className={style.Back} src="/arrow-left-solid.svg"/>
-      </Link>
+      <MasInfoNav/>
         
       <div className={style.SobreAnuros}>
         <h1> Sobre los anuros</h1>

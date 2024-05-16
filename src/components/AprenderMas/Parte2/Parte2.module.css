@@ -13,6 +13,10 @@
     justify-content: space-around;
 }
 
+.imagen2 {
+    border-radius: 25px;
+}
+
 .nombreVulgar {
     width: 30vw;
     display: flex;
@@ -22,7 +26,6 @@
 
 .nombreVulgar h2 {
     color: rgb(255, 157, 19);
-    font-weight: bold;
 }
 
 .nombreVulgar p {
@@ -50,4 +53,22 @@
     margin-left: 1vw;
     margin-top: 2vh;
     width: 100%;
+}
+
+
+@media screen and (max-width: 1360px) {
+
+    .parte2 {
+        height: 70vh;
+        margin-top: 30vh;
+    }
+
+    .divUno {
+        margin-top: 5vh;
+    }
+
+    .detalles {
+        margin-top: 10vh;
+    }
+
 }

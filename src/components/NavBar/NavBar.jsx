@@ -49,10 +49,10 @@ const NavBar = () => {
 
     <div className={`${style.NavBar} ${ visible ? style.NavBarVisible : style.NavBarHidden}`}>
 
-      <a href="#Anura"><img src="/AnurApp2.png" className={style.anurNav}/></a>
+      <a href={location.pathname === "/" ? "#Anura" : "/"}><img src="/AnurApp2.png" className={style.anurNav}/></a>
        
-      <a href="#sobre-app"><span> Sobre la app </span></a>
-      <a href="#equipo"><span> Equipo </span></a>
+      <a href={location.pathname === "/" ? "#sobre-app" : "/#sobre-app"}><span> Sobre la app </span></a>
+      <a href={location.pathname === "/" ? "#equipo" : "/#equipo"}><span> Equipo </span></a>
       <Link to="/masinfo"><span> Más info </span></Link>
         
     </div>

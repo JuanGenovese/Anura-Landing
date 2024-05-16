@@ -31,6 +31,18 @@
     margin-bottom: 5vh;
 }
 
+
+
+@media screen and (max-width: 1360px) {
+    .contenido2 {
+        padding-top: 30vh;
+        padding-bottom: 20vh;
+        margin: 0;
+    }
+}
+
+
+
 @media screen and (max-width: 700px) {
     .contenido2 {
         position: relative;

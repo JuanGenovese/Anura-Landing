@@ -102,6 +102,38 @@
     margin-left: 1vw;
 }
 
+
+
+
+@media screen and (max-width: 1360px) {
+
+    .contenido {
+        width: 90%;
+        margin-top: 25vh;
+    }
+
+    .grid {
+        height: 45vh;
+    }
+
+    .verMasCont {
+        height: 10vh;
+    }
+
+    .verMasCont p {
+        margin-bottom: 2vh;
+    }
+
+    .verMasIcon{
+        margin-top: 0;
+    }
+
+
+}
+
+
+
+
 @media screen and (max-width: 700px) {
     .contenido {
         width: 100%;

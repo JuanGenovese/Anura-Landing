@@ -4,6 +4,7 @@
     justify-content: space-around;
     color: white;
     margin-bottom: 10vh;
+    width: 100%;
 }
 
 .detalles {
@@ -23,5 +24,10 @@
 }
 
 .imagen1{
-    border-radius: 2%;
+    border-radius: 5%;
+    height: 45vh;
+}
+
+@media screen and (max-width: 1360px) {
+
 }

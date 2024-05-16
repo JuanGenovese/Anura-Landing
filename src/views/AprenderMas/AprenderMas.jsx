@@ -9,9 +9,9 @@ import Parte4 from '../../components/AprenderMas/Parte4/Parte4'
 
 const AprenderMas = () => {
 
-    //useEffect(() => {
-    //    window.scrollTo(0,0)
-    //})
+    useEffect(() => {
+        window.scrollTo(0,0)
+    })
   return (
     <div className={style.aprenderMasCont}>
         <img src="/Landing3.JPG" className={style.bg}/>

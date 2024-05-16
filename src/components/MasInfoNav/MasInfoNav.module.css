@@ -1,0 +1,14 @@
+.backCont {
+    position: fixed;
+}
+
+.Back {
+    border: none;
+    margin-left: 3vw;
+    margin-top: 6vh;
+    height: 9vh;
+    width: 4vw;
+    border-radius: 50%;
+    background: none;
+    height: 6vh;
+}
