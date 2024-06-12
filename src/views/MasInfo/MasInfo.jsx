@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import { Link } from 'react-router-dom'
 import style from "./MasInfo.module.css"
 import MasInfoNav from '../../components/MasInfoNav/MasInfoNav'
 
@@ -7,6 +6,7 @@ const MasInfo = () => {
 
   useEffect (() => {
     window.scrollTo(0,0)
+    console.log(window.innerWidth)
   },[])
   
   return (

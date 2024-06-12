@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import style from "./SecondView.module.css"
 import { Link } from 'react-router-dom'
+import { SecondViewAnimations } from '../../../Animaciones/animaciones'
+
 
 const SecondView = () => {
+    const fotosRef = useRef(null)
+
+    useEffect(() => {
+        SecondViewAnimations(fotosRef.current)
+    }, [])
   return (
     <div className={style.contenido}>
 
@@ -11,7 +18,7 @@ const SecondView = () => {
         <div className={style.grid}>
 
 
-            <div className={style.gridDiv}>
+            <div className={style.gridDiv} ref={fotosRef}>
 
                 <div className={style.title}>
                     <img src="/camera-solid.svg" className={style.fotoIcon}/> 
