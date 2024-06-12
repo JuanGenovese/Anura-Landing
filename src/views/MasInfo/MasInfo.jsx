@@ -16,7 +16,7 @@ const MasInfo = () => {
       <MasInfoNav/>
         
       <div className={style.SobreAnuros}>
-        <h1> Sobre los anuros</h1>
+        <h1> Sobre los anuros hola</h1>
         <p>Los anuros son un grupo de animales comúnmente conocidos como sapos,  ranas yescuerzos. Presentan un cuerpo corto y ensanchado, cuatros patas y carecen de cola.Podemos observarlos frecuentemente de noche, cuando la mayoría de las especiesestán activas. Los machos emiten cantos para atraer a las hembras a los sitios dereproducción. En general, el ciclo de vida de los anuros incluye una fase en latierra, donde viven los juveniles y adultos, y una fase en el agua, donde sedesarrollan los huevos y los renacuajos. Sin embargo, existen muchas modificacionesa este ciclo de vida con especies que viven exclusivamente en el agua y otras quepueden colocar huevos en tierra y nunca necesitan ocupar cuerpos de agua paracompletar su desarrollo y transformarse en adultos. <br/>
         <br/>Los anuros son un grupo muy diverso, no sólo en número, con más de 7600especies reconocidas en todo el mundo, sino también en hábitos, modos reproductivosy comportamientos.<br/>  
         <br/>Esta aplicación te invita a introducirse en el fascinante mundo de estosanimales y conocer las especies que podemos encontrar en la provincia de Jujuy,bienvenidos!
