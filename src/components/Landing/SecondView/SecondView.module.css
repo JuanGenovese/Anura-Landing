@@ -1,11 +1,12 @@
 .contenido {
     width: 90%;
     height: 100%;
-    margin-top: 30vh;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .SobreLaApp{
@@ -16,8 +17,9 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10vh;
+    margin-top: 5vh;
 }
 
 .grid {
@@ -26,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
-    gap: 3vh;
+    gap: 8vh;
 }
 
 .gridDiv {
@@ -35,6 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 15vh;
 }
 
 .title {
@@ -42,13 +45,12 @@
     height: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .gridDiv h4 {
-    
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    
 }
 
 .fotoIcon {
@@ -62,7 +64,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    padding-left: 2.5vw;
 }
 
 .verMasCont {
@@ -112,8 +115,27 @@
         margin-top: 25vh;
     }
 
+    .SobreLaApp {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
     .grid {
         height: 45vh;
+        gap: 3vh;
+    }
+
+    .gridDiv {
+        height: fit-content;
+    }
+
+    .gridDiv h4 {
+        font-size: 1.2rem;
+    }
+
+    .gridDiv p {
+        font-size: 0.9rem;
+        padding-left: 0;
     }
 
     .verMasCont {
