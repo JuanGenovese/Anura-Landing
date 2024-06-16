@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import style from "./FirstView.module.css"
-import { FirstViewAnimations } from '../../../Animaciones/animaciones'
+import { FirstViewAnimations} from '../../../Animaciones/animaciones'
 import { useEffect, useRef } from 'react'
 
 const FirstView = () => {

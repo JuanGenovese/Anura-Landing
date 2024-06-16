@@ -15,7 +15,7 @@ const AprenderMas = () => {
   return (
     <div className={style.aprenderMasCont}>
         <img src="/Landing3.JPG" className={style.bg}/>
-        <p className={style.introduccion}> En este apartado vas a encontrar toda la informacion necesaria para entender y navegar dentro de AnurApp</p>
+        <p className={style.introduccion}> En éste apartado vas a encontrar toda la informacion necesaria para entender y navegar dentro de AnurApp</p>
         <Parte1/>
         <Parte2/>
         <Parte3/>

@@ -13,14 +13,24 @@
     justify-content: space-around;
 }
 
+.fotos h2 {
+    font-size: 1.6rem;
+}
+
 .fotos p {
     margin-left: 2vw;
     margin-top: 2vh;
+    font-size: 1.3rem;
+}
+
+.nombreCientifico h2 {
+    font-size: 1.6rem;
 }
 
 .nombreCientifico p {
     margin-top: 2vh;
     margin-left: 2vw;
+    font-size: 1.3rem;
 }
 
 .imagen1{

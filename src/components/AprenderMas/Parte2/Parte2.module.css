@@ -7,21 +7,17 @@
     margin-top: 25vh;
 }
 
-.divUno {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
 .imagen2 {
+    width: 95%;
+    height: 20vh;
     border-radius: 25px;
 }
 
 .nombreVulgar {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 95%;
+    height: 20vh;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0);
 }
 
 .nombreVulgar h2 {
@@ -29,20 +25,27 @@
 }
 
 .nombreVulgar p {
+    margin-left: 1vw;
     margin-top: 2vh;
-    margin-left: 2vw;
+    width: 95%;
 }
 
 .detalles {
-    margin-top: 2.5vh;
     margin-bottom: 2.5vh;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    padding: 5vw;
+    padding-left: 10vw;
+    gap: 20px;
 }
 
 .detalleItem {
-
-    width: 21%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0);
+    width: 95%;
+    height: 20vh;
+    
 }
 
 .detalleItem h2 {
@@ -52,7 +55,7 @@
 .detalleItem p {
     margin-left: 1vw;
     margin-top: 2vh;
-    width: 100%;
+    width: 95%;
 }
 
 

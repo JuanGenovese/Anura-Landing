@@ -1,15 +1,33 @@
 import React, { useRef, useEffect } from 'react'
 import style from "./SecondView.module.css"
 import { Link } from 'react-router-dom'
-import { SecondViewAnimations } from '../../../Animaciones/animaciones'
+import {IzqADer, DerAIzq, aparecer } from '../../../Animaciones/animaciones'
 
 
 const SecondView = () => {
     const fotosRef = useRef(null)
+    const caracteristicasRef = useRef(null)
+    const conservacionRef = useRef(null)
+    const mapasRef = useRef(null)
+    const cantoRef = useRef(null)
+    const lugarRef = useRef(null)
+
+
+
+    console.log(fotosRef.current)
 
     useEffect(() => {
-        SecondViewAnimations(fotosRef.current)
+
+        IzqADer(fotosRef.current)
+        IzqADer(caracteristicasRef.current)
+
+        aparecer(cantoRef.current)
+        aparecer(lugarRef.current)
+
+        DerAIzq(conservacionRef.current)
+        DerAIzq(mapasRef.current)
     }, [])
+
   return (
     <div className={style.contenido}>
 
@@ -29,7 +47,7 @@ const SecondView = () => {
             </div>
 
 
-            <div className={style.gridDiv}>
+            <div className={style.gridDiv} ref={cantoRef}>
 
                 <div className={style.title}>
                     <img src="/volume-high-solid.svg" className={style.fotoIcon}/>
@@ -41,7 +59,7 @@ const SecondView = () => {
             </div>
 
 
-            <div className={style.gridDiv}> 
+            <div className={style.gridDiv} ref={conservacionRef}> 
                 
                 <div className={style.title}>
                     <img src="/book-medical-solid.svg" className={style.fotoIcon}/>
@@ -53,7 +71,7 @@ const SecondView = () => {
             </div>
 
 
-            <div className={style.gridDiv}> 
+            <div className={style.gridDiv} ref={caracteristicasRef}> 
                 
                 <div className={style.title}>
                     <img src="/question-solid.svg" className={style.fotoIcon}/>
@@ -65,7 +83,7 @@ const SecondView = () => {
             </div>
 
 
-            <div className={style.gridDiv}>
+            <div className={style.gridDiv} ref={lugarRef}>
                 
                 <div className={style.title}>
                     <img src="/location-dot-solid.svg" className={style.fotoIcon}/>
@@ -77,7 +95,7 @@ const SecondView = () => {
             </div>
 
 
-            <div className={style.gridDiv}> 
+            <div className={style.gridDiv} ref={mapasRef}> 
                 
                 <div className={style.title}>
                     <img src="/map-solid.svg" className={style.fotoIcon}/>
