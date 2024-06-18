@@ -38,6 +38,28 @@
     height: 45vh;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 700px) {
+    .parte1 {
+        height: 65vh;
+        flex-direction: column;
+        margin-top: 4vh;
+    }
+    
+    .detalles {
+        padding-left: 3vw;
+    }
 
+    .fotos p {
+        font-size: 1rem;
+        margin-bottom: 4vh;
+    }
+
+    .nombreCientifico p {
+        margin-bottom: 2vh;
+        font-size: 1rem;
+    }
+
+    .imagen1 {
+        margin-top: 5vh;
+    }
 }

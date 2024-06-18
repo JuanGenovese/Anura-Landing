@@ -83,7 +83,8 @@ export const FirstViewAnimations = (elemento1, elemento2, elemento3, elemento4) 
             x:-45
         },
         { 
-            x:0, opacity: 1, 
+            x:0, 
+            opacity: 1, 
             duration: 0.6,  
             ease: "power1.out"
         }

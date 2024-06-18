@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import style from "./FirstView.module.css"
-import { FirstViewAnimations} from '../../../Animaciones/animaciones'
+import { FirstViewAnimations, aparecer} from '../../../Animaciones/animaciones'
 import { useEffect, useRef } from 'react'
 
 const FirstView = () => {
@@ -12,7 +12,25 @@ const FirstView = () => {
   const btnRef = useRef(null)
 
   useEffect(() => {
-    FirstViewAnimations(logoRef.current, descriptionRef.current, txtRef.current, btnRef.current)
+
+    if (window.innerWidth >= 1360) {
+
+      FirstViewAnimations(
+        logoRef.current, 
+        descriptionRef.current, 
+        txtRef.current, 
+        btnRef.current
+      )
+
+    } else if (window.innerWidth <= 700) {
+
+      aparecer(logoRef.current, 0.5)
+      aparecer(descriptionRef.current, 1)
+      aparecer(txtRef.current, 1.5)
+      aparecer(btnRef.current, 2)
+      
+    }
+    
   },[])
 
   return (

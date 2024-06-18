@@ -12,8 +12,6 @@ import './App.css'
 const App = () => {
 
   const location = useLocation()
-  console.log(window.innerWidth) //1360
-  console.log(window.innerHeight) //615
 
 
   return (

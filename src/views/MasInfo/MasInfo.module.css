@@ -123,6 +123,10 @@
         width: 9vw;
     }
 
+    .SobreAnuros {
+        padding-top: 15vh;
+    }
+
     .SobreAnuros h1 {
         margin-bottom: 1vh;
     }
@@ -140,6 +144,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10vh;
     }
 
     .Conservacion h2 {
@@ -155,10 +160,12 @@
 
     .Diversidad {
         height: 100%;
+        margin-top: 15vh;
     }
 
     .Diversidad h2 {
         font-size: 2rem;
+        margin-bottom: 4vh;
     }
 
     .Diversidad p {

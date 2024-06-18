@@ -25,3 +25,10 @@
     width: 85%;
     text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+    .introduccion {
+        padding-top: 15vh;
+        font-size: 1rem;
+    }
+}

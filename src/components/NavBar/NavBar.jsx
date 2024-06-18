@@ -3,9 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import style from "./NavBar.module.css"
 
 const NavBar = () => {
-
-  const [ prevScrollPos, setPrevScrollPos ] = useState(575)
   const [ visible, setVisible ] = useState(false)
+  const [ windowWidth, setWindowWidth ] = useState(0)
 
   const location = useLocation()
 
@@ -14,19 +13,13 @@ const NavBar = () => {
    
     const handleScroll = () => { 
 
-      if(location.pathname === "/aprenderMas") {
+
+      if(location.pathname === "/aprenderMas" || window.scrollY > 450/*875*/) {
         setVisible(true)
-      } else if (window.scrollY < 575) {
-        setVisible(false)
       } else {
-     
-      const currentScrollPos = window.scrollY
-
-      const scrollDown = prevScrollPos < currentScrollPos;
-
-      setVisible(scrollDown)
-      setPrevScrollPos(currentScrollPos)
+        setVisible(false)
       }
+
     }
 
     window.addEventListener("scroll", handleScroll);

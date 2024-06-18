@@ -13,19 +13,29 @@ const SecondView = () => {
     const lugarRef = useRef(null)
 
 
-
-    console.log(fotosRef.current)
-
     useEffect(() => {
 
-        IzqADer(fotosRef.current)
-        IzqADer(caracteristicasRef.current)
+        if (window.innerWidth >= 1360) {
+            IzqADer(fotosRef.current)
+            IzqADer(caracteristicasRef.current)
 
-        aparecer(cantoRef.current)
-        aparecer(lugarRef.current)
+            aparecer(cantoRef.current)
+            aparecer(lugarRef.current)
 
-        DerAIzq(conservacionRef.current)
-        DerAIzq(mapasRef.current)
+            DerAIzq(conservacionRef.current)
+            DerAIzq(mapasRef.current)
+    
+        } else if (window.innerWidth <= 700) {
+            IzqADer(fotosRef.current)
+            DerAIzq(cantoRef.current)
+            IzqADer(conservacionRef.current)
+            DerAIzq(caracteristicasRef.current)
+            IzqADer(lugarRef.current)
+            DerAIzq(mapasRef.current)
+
+        }
+
+        
     }, [])
 
   return (

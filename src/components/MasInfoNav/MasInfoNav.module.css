@@ -12,3 +12,17 @@
     background: none;
     height: 6vh;
 }
+
+@media screen and (max-width: 700px) {
+    .backCont {
+        position: fixed;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Back {
+        height: 12vh;
+        width: 7vw;
+    }
+}

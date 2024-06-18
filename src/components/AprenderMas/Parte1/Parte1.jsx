@@ -9,9 +9,9 @@ const Parte1 = () => {
   const nomCientRef = useRef(null)
 
   useEffect(() => {
-    aparecer(fotosRef.current, 0.8)
-    aparecer(nomCientRef.current, 1.2)
-    aparecer(imagenRef.current, 2)
+    aparecer(fotosRef.current, 0.5)
+    aparecer(nomCientRef.current, 1)
+    aparecer(imagenRef.current, 1.5)
   })
   
   return (
