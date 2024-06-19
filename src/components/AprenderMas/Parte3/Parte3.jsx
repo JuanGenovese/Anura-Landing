@@ -11,32 +11,46 @@ const Parte3 = () => {
   const detectAudRef = useRef(null)
 
   useEffect(() => {
-    aparecer(uicnRef.current)
-    aparecer(argRef.current, 0.1)
-    aparecer(abundRef.current, 1.5)
-    aparecer(detectVisRef.current, 2)
-    aparecer(detectAudRef.current,2.5)
+    if (window.innerWidth <= 700) {
+      aparecer(uicnRef.current)
+      aparecer(detectAudRef.current, 1)
+      aparecer(argRef.current, 1)
+      aparecer(abundRef.current, 1)
+      aparecer(detectVisRef.current, 1)
+      
+
+    } else {
+      aparecer(uicnRef.current)
+      aparecer(argRef.current, 1)
+      aparecer(abundRef.current, 1.5)
+      aparecer(detectVisRef.current, 2)
+      aparecer(detectAudRef.current,2.5)
+    }
+    
   })
   return (
     <div className={style.parte3}>
-
-      
         
 
       <div className={style.detalles}>
 
-        
+        {window.innerWidth <= 700 ? 
+          <div className={style.imgCont}>
+            <img src="/referencias.png" className={style.imagen} />
+          </div> : null
+        }
 
         <div className={style.detalleItem} ref={uicnRef}>
           <h2>UICN</h2>
           <p>estado de conservación de la especie a nivel global según la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN, 2023).</p>
         </div> 
         
-        <div className={style.imgCont}>
-          <img src="/referencias.png" className={style.imagen} />
-        </div>
+        {window.innerWidth > 700 ? 
+          <div className={style.imgCont}>
+            <img src="/referencias.png" className={style.imagen} />
+          </div> : null
+        }
 
-        
         
         <div className={style.detalleItem} ref={detectAudRef}>
           <h2>Detectabilidad auditiva</h2>

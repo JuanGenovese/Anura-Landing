@@ -62,3 +62,17 @@
         margin-bottom: 10vh;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .parte3 {
+        margin-top: 10vh;
+    }
+
+    .detalles {
+       grid-template-columns: 1fr;
+       grid-template-rows: 16.66%;
+       height: 100%;
+       margin-bottom: 25vh;
+       gap: 10vw;
+    }
+}

@@ -30,8 +30,15 @@ const Parte1 = () => {
         </div>
           
       </div>
+
+      <div className={style.imgCont}>
+        
+        <img src="/referencia1.png" className={style.imagen1} ref={imagenRef} />
+
+
+      </div>
             
-      <img src="/referencia1.png" className={style.imagen1} ref={imagenRef} />
+      
 
     </div>
   )

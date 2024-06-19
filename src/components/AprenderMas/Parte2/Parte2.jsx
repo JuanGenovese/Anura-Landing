@@ -28,7 +28,7 @@ const Parte2 = () => {
 
             <div className={style.detalles}>
 
-                <div className={style.detalleItem} ref={imagenRef}>
+                <div className={style.detalleItemItem} ref={imagenRef}>
                     <img src="/referencia2.png" className={style.imagen2} />
                 </div>
 
