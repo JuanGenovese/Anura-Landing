@@ -76,7 +76,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1370px) {
     .DownloadButton {
         font-size: 1.2rem;
         border-radius: 30px;
