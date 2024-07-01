@@ -4,7 +4,7 @@ import style from "./NavBar.module.css"
 
 const NavBar = () => {
   const [ visible, setVisible ] = useState(false)
-  const [ windowWidth, setWindowWidth ] = useState(0)
+  const [ prevScrollPos, setPrevScrollPos ] = useState(0)
 
   const location = useLocation()
 
@@ -14,10 +14,15 @@ const NavBar = () => {
     const handleScroll = () => { 
 
 
-      if(location.pathname === "/aprenderMas" || window.scrollY > 450/*875*/) {
+      if(location.pathname === "/aprenderMas") {
         setVisible(true)
-      } else {
-        setVisible(false)
+      } else if ( window.scrollY > 450/*875*/) {
+
+        const currentScrollPos = window.scrollY
+        const scrollDown = prevScrollPos < currentScrollPos;
+        setVisible(scrollDown)
+        setPrevScrollPos(currentScrollPos)
+        
       }
 
     }

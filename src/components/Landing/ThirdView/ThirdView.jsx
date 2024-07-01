@@ -15,7 +15,11 @@ const ThirdView = () => {
     <div className={style.contenido2} id='equipo'>
 
       <div className={style.quienesSomos}>
-        <p>Este proyecto fue desarrollado por integrantes del Instituto de Ecorregiones Andinas, INECOA, dependiente de la Universidad Nacional de Jujuy el CONICET. Formamos parte del Grupo de Investigación en Diversidad, Ecología y Conservación de Anfibios, que tiene una trayectoria de más de 20 años estudiando y monitoreando la diversidad de anfibios en la provincia, información que fue utilizada para realizar este catálogo.</p>
+        <p>Este proyecto fue desarrollado por integrantes del Instituto de Ecorregiones Andinas,
+INECOA, dependiente de la Universidad Nacional de Jujuy el CONICET. Formamos
+parte un grupo de investigación que tiene una trayectoria de más de 20 años estudiando y monitoreando la
+diversidad de anfibios en la provincia, información que fue utilizada para realizar este
+catálogo.</p>
       </div>
 
       <div className={style.carrete} ref={carreteRef}>
