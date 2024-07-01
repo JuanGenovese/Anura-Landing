@@ -13,10 +13,7 @@ const NavBar = () => {
    
     const handleScroll = () => { 
 
-
-      if(location.pathname === "/aprenderMas") {
-        setVisible(true)
-      } else if ( window.scrollY > 450/*875*/) {
+      if ( window.scrollY > 450) {
 
         const currentScrollPos = window.scrollY
         const scrollDown = prevScrollPos < currentScrollPos;

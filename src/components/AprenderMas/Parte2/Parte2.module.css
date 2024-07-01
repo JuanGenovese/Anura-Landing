@@ -4,13 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25vh;
-}
-
-.imagen2 {
-    width: 95%;
-    height: 20vh;
-    border-radius: 25px;
 }
 
 .nombreVulgar {
@@ -38,6 +31,7 @@
     padding: 5vw;
     padding-left: 10vw;
     gap: 20px;
+    margin-top: 25vh;
 }
 
 .detalleItem {
@@ -62,12 +56,8 @@
 @media screen and (max-width: 1360px) {
 
     .parte2 {
-        height: 70vh;
-        margin-top: 30vh;
-    }
-
-    .divUno {
-        margin-top: 5vh;
+        height: 100%;
+        margin-top: 25vh;
     }
 
     .detalles {
@@ -78,12 +68,12 @@
 
 @media screen and (max-width: 700px) {
     .parte2 {
-        height: 100%;
+        margin-top: 10vh;
     }
 
     .detalles {
         grid-template-columns: 1fr;
-        grid-template-rows:10%;
+        grid-template-rows:20%;
         padding-left: 5vw;
     }
 
@@ -93,7 +83,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     }
 
     .nombreVulgar p {
@@ -101,7 +91,6 @@
     }
 
     .imagenItem {
-        border: 2px solid red;
         height: 20vh;
     }
 
@@ -112,7 +101,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 15vh;
+        margin-bottom: 5vh;
+        background-color: rgba(0, 0, 0, 0.35);
     }
 
     .detalleItem p {

@@ -22,7 +22,7 @@ const FirstView = () => {
         btnRef.current
       )
 
-    } else if (window.innerWidth <= 700) {
+    } else if (window.innerWidth < 1360) {
 
       aparecer(logoRef.current, 0.5)
       aparecer(descriptionRef.current, 1)

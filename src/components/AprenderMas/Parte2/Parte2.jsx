@@ -13,13 +13,13 @@ const Parte2 = () => {
 
     useEffect(() => {
 
-        IzqADer(imagenRef.current)
-        IzqADer(familiaRef.current)
-        IzqADer(habitatRef.current)
+        IzqADer(nombreVulgarRef.current)
+        IzqADer(tamañoRef.current)
+        IzqADer(habitoRef.current)
 
-        DerAIzq(nombreVulgarRef.current)
-        DerAIzq(tamañoRef.current)
-        DerAIzq(habitoRef.current)
+        DerAIzq(familiaRef.current)
+        DerAIzq(habitatRef.current)
+
     }) 
     return (
         <div className={style.parte2}>
@@ -28,15 +28,10 @@ const Parte2 = () => {
 
             <div className={style.detalles}>
 
-                <div className={style.detalleItemItem} ref={imagenRef}>
-                    <img src="/referencia2.png" className={style.imagen2} />
-                </div>
-
                 <div className={style.nombreVulgar} ref={nombreVulgarRef}>
                     <h2>Nombre Vulgar</h2>
                     <p>nombre común con el que se conoce la especie, puede variar en las diferentes regiones.</p>
                 </div>
-
 
         
                 <div className={style.detalleItem} ref={familiaRef}>

@@ -1,5 +1,12 @@
-.perfil {
-    height: 25vh;
+.integrante {
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px black;
+    background-color: rgba(0, 139, 0, 0.2);
 }
 
 .nombre {
@@ -13,16 +20,23 @@
 }
 
 @media screen and (max-width: 700px) {
-    .perfil {
-        height: 30vh;
+    .integrante{ 
+        height: 15vh;
+        width: 41vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .nombre {
         font-size: 1rem;
         margin-bottom: 1vh;
+        text-align: center;
     }
 
     .funcion {
         font-size: 0.6rem;
+        text-align: center;
     }
 }

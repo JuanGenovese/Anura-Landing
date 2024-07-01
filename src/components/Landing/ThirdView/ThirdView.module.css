@@ -23,13 +23,14 @@
 }
 
 .carrete {
-    height: 100%;
+    height: 40vh;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20% 20%;
+    gap: 35px;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 
@@ -49,7 +50,7 @@
         position: relative;
         height: 100%;
         width: 100%;
-        margin-top: 5vh;
+        margin-top: 15vh;
         padding-top: 15vh;
     }
 
@@ -63,8 +64,11 @@
     .carrete {
         height: 100%;
         width: 90%;
-        overflow-x: scroll;
-        margin-bottom: 10vh;
+        padding-bottom: 15vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+
     }
 }
 

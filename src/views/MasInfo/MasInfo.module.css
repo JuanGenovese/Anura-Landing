@@ -99,7 +99,7 @@
 }
 
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1360px) {
 
     .SobreAnuros {
         margin-bottom: 5vh;
@@ -111,6 +111,9 @@
 
     .Conservacion p {
         font-size: 1rem;
+    }
+    .Diversidad{
+        margin-top: 5vh;
     }
 
     .Diversidad p {
@@ -170,6 +173,7 @@
     .Diversidad {
         height: 100%;
         margin-top: 15vh;
+        padding-bottom: 15vh;
     }
 
     .Diversidad h2 {

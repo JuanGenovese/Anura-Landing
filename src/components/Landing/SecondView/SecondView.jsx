@@ -15,7 +15,7 @@ const SecondView = () => {
 
     useEffect(() => {
 
-        if (window.innerWidth >= 1360) {
+        if (window.innerWidth >= 1360 || window.innerWidth < 1360) {
             IzqADer(fotosRef.current)
             IzqADer(caracteristicasRef.current)
 
@@ -25,7 +25,7 @@ const SecondView = () => {
             DerAIzq(conservacionRef.current)
             DerAIzq(mapasRef.current)
     
-        } else if (window.innerWidth <= 700) {
+        } else if (window.innerWidth < 700) {
             IzqADer(fotosRef.current)
             DerAIzq(cantoRef.current)
             IzqADer(conservacionRef.current)
