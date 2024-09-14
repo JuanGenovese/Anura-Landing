@@ -8,14 +8,29 @@ const NavBar = () => {
 
   const location = useLocation()
 
+  console.log(window.scrollY)
+  console.log(visible)
+
+
   useEffect(() => {
 
    
     const handleScroll = () => { 
 
-      if ( window.scrollY > 450) {
+      if(location.pathname === "/aprenderMas") {
 
-        const currentScrollPos = window.scrollY
+        setVisible(true)
+
+        if(window.scrollY > 5 ) {
+          const currentScrollPos = window.scrollY
+          const scrollDown = prevScrollPos < currentScrollPos;
+          setVisible(scrollDown)
+          setPrevScrollPos(currentScrollPos)
+        }
+
+      } else if ( window.scrollY > 450) {
+
+        const currentScrollPos = window.scrollY 
         const scrollDown = prevScrollPos < currentScrollPos;
         setVisible(scrollDown)
         setPrevScrollPos(currentScrollPos)
@@ -34,16 +49,21 @@ const NavBar = () => {
 
   return (
 
+
     <div className={`${style.NavBar} ${ visible ? style.NavBarVisible : style.NavBarHidden}`}>
 
       <a href={location.pathname === "/" ? "#Anura" : "/"}><img src="/AnurApp2.png" className={style.anurNav}/></a>
        
-      <a href={location.pathname === "/" ? "#sobre-app" : "/#sobre-app"} ><span> Sobre la app </span></a>
+      <a href={location.pathname === "/" ? "#sobre-app" : "/#sobre-app"} ><span> Sobre la app</span></a>
       <a href={location.pathname === "/" ? "#equipo" : "/#equipo"}><span> Equipo </span></a>
       <Link to="/masinfo"><span> Más info </span></Link>
         
     </div>
+
+
   )
+
+
 }
 
 export default NavBar

@@ -5,7 +5,7 @@ import { FirstViewAnimations, aparecer} from '../../../Animaciones/animaciones'
 import { useEffect, useRef } from 'react'
 
 const FirstView = () => {
-
+  
   const logoRef = useRef(null)
   const descriptionRef = useRef(null)
   const txtRef = useRef(null)
@@ -44,7 +44,13 @@ const FirstView = () => {
         <p className={style.Description} ref={descriptionRef}>App gratuita que permite conocer e identificar las diferentes especies de ranas y sapos presentes en la provincia de Jujuy. </p>
         <p className={style.txt} ref={txtRef}>¡Conocé la diversidad de anfibios de Jujuy!</p>
         <Link to="https://biodiversidadjujuy.com.ar/" className={style.Link}>
-          <button className={style.DownloadButton} ref={btnRef}> DESCARGAR </button>
+          <button className={style.DownloadButton} ref={btnRef}>
+            { 
+              window.innerWidth < 650
+              ? "DESCARGAR"
+              : "IR AL SITIO" 
+            }
+          </button>
         </Link>
             
   
