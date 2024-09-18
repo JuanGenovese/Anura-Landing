@@ -43,7 +43,7 @@ const FirstView = () => {
         <img src="/AnurApp2.png" className={style.logo} ref={logoRef}/>
         <p className={style.Description} ref={descriptionRef}>App gratuita que permite conocer e identificar las diferentes especies de ranas y sapos presentes en la provincia de Jujuy. </p>
         <p className={style.txt} ref={txtRef}>¡Conocé la diversidad de anfibios de Jujuy!</p>
-        <Link to="https://biodiversidadjujuy.com.ar/" className={style.Link}>
+        <Link to="https://anur-app-8rb1.vercel.app/" className={style.Link}>
           <button className={style.DownloadButton} ref={btnRef}>
             { 
               window.innerWidth < 650
